@@ -27,7 +27,7 @@
             <div class="products-bottom">
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx?IdAfilhado=123">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g1.jpg" class="img-responsive of-my" alt="" />
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g2.jpg" class="img-responsive of-my" alt="" />
@@ -57,13 +57,15 @@
                 </div>
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx?Id=123">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g3.jpg" class="img-responsive of-my" alt="" />
                                     <div class="mask">
                                         <h4>exerci tation ullamcorper suscipit</h4>
-                                        <p>A wonderful serenity has taken possession of my entire soul exerci tation ullamcorper suscipit</p>
+                                        <p>
+                                            A wonderful serenity has taken possession of my entire soul exerci tation ullamcorper suscipit
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +78,7 @@
             <div class="products-bottom">
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g4.jpg" class="img-responsive of-my" alt="" />
@@ -91,7 +93,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g5.jpg" class="img-responsive of-my" alt="" />
@@ -106,7 +108,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g6.jpg" class="img-responsive of-my" alt="" />
@@ -125,7 +127,7 @@
             <div class="products-bottom">
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g7.jpg" class="img-responsive of-my" alt="" />
@@ -140,7 +142,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g8.jpg" class="img-responsive of-my" alt="" />
@@ -155,7 +157,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="view view-tenth">
-                        <a href="single.html">
+                        <a href="Adocao.aspx">
                             <div class="inner_content clearfix">
                                 <div class="product_image">
                                     <img src="images/g9.jpg" class="img-responsive of-my" alt="" />

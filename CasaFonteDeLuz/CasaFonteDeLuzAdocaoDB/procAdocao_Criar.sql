@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[procAdocao_Criar]
-	@IdCrianca			int
+	@IdAfilhado			int
 ,	@emailPadrinho		varchar(150)
 ,	@nomePadrinho		varchar(150)
 ,	@comentarioPadrinho	varchar(150)
@@ -9,7 +9,7 @@ AS
 	INSERT INTO
 		dbo.Adocao
 	(	
-		IdCrianca
+		IdAfilhado
 	,	emailPadrinho		
 	,	nomePadrinho		
 	,	comentarioPadrinho	
@@ -17,7 +17,7 @@ AS
 	)
 	VALUES
 	(
-		@IdCrianca			
+		@IdAfilhado
 	,	@emailPadrinho		
 	,	@nomePadrinho		
 	,	@comentarioPadrinho	

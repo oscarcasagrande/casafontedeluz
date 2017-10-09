@@ -1,5 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[procAdocao_Ler]
-
+﻿CREATE PROCEDURE [dbo].[procAdocaoIdAfilhado_Ler]
+	@IdAfilhado	int
 AS
 	SELECT
 		IdAfilhado
@@ -8,6 +8,7 @@ AS
 	,	comentarioPadrinho
 	,	telefonePadrinho
 	,	dataCriacao
-
 	FROM
 		dbo.Adocao
+	where
+		IdAfilhado	=	@IdAfilhado
