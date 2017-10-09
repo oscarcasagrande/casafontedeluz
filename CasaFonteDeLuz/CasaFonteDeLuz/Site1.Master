@@ -7,14 +7,91 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <!--Custom-Theme-files-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--Custom-Theme-files-->
+    <!--Start-smoth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!--end-smoth-scrolling-->
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+        <!--Header-Starts-Here-->
+        <div class="header" id="home">
+            <div class="container">
+                <span class="menu"></span>
+                <script>
+                    $("span.menu").click(function () {
+                        $("ul.navig").slideToggle("slow", function () {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderMenu" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--Header-Ends-Here-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--footer-Ends-Here-->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="col-md-4 footer-left">
+                        <h3>Redes Sociais</h3>
+                        <ul>
+                            <li><a href="#" class="active"><span class="fb"></span></a></li>
+                            <li><a href="#"><span class="twit"></span></a></li>
+                            <li><a href="#"><span class="c"></span></a></li>
+                            <li><a href="#"><span class="g"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-right">
+                        <h3>Localização</h3>
+                        <ul>
+                            <li><span class="ads"></span>
+                                <p>5674 St Ginny place, New york,MD 87 Gh 65.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-right">
+                        <h3>Entre em contato</h3>
+                        <ul>
+                            <li><span class="ph"></span>
+                                <p>Phone :+55 11 999 456 777</p>
+                            </li>
+                            <li><span class="mail"></span>
+                                <p><a href="mailto:example@email.com">user@example.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="footer-text">
+                    <p>Design by<a href="http://w3layouts.com/"> w3layouts</a></p>
+                </div>
+            </div>
+            <a href="#home" id="toTop" class="scroll" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+        </div>
+        <!--footer-Ends-Here-->
     </form>
 </body>
 </html>

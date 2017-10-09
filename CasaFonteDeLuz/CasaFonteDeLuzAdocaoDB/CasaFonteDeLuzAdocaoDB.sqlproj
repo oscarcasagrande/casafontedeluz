@@ -61,6 +61,7 @@
   <ItemGroup>
     <Build Include="Adocao.sql" />
     <Build Include="procAdocao_Ler.sql" />
+    <Build Include="procAdocao_Criar.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CasaFonteDeLuzAdocaoDB.refactorlog" />
