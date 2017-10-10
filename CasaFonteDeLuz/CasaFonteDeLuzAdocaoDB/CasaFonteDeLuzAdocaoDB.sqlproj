@@ -63,8 +63,13 @@
     <Build Include="procAdocao_Ler.sql" />
     <Build Include="procAdocao_Criar.sql" />
     <Build Include="procAdocaoIdAfilhado_Ler.sql" />
+    <Build Include="Afilhado.sql" />
+    <Build Include="procAfilhadoAdocao_Ler.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CasaFonteDeLuzAdocaoDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Populate_Afilhados_Table.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
