@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[procAdocao_Criar]
-	@IdAfilhado			int
+	@IdAfilhado			char(10)
 ,	@emailPadrinho		varchar(150)
 ,	@nomePadrinho		varchar(150)
 ,	@comentarioPadrinho	varchar(150)

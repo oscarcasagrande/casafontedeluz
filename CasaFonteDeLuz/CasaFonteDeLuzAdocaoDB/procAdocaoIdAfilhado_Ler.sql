@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[procAdocaoIdAfilhado_Ler]
-	@IdAfilhado	int
+	@IdAfilhado	char(10)
 AS
 	SELECT
 		IdAfilhado

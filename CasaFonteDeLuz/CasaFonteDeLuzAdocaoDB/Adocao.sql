@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Adocao]
 (
-	[IdAfilhado] INT NOT NULL PRIMARY KEY, 
+	[IdAfilhado] CHAR(10) NOT NULL PRIMARY KEY, 
     [emailPadrinho] VARCHAR(150) NULL, 
     [nomePadrinho] VARCHAR(150) NULL, 
     [comentarioPadrinho] VARCHAR(150) NULL, 
