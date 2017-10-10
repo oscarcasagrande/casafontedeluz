@@ -62,6 +62,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
+    <Content Include="emailtemplate\AdocaoEfetuada.html" />
     <Content Include="images\bnr-1.jpg" />
     <Content Include="images\bnr-2.jpg" />
     <Content Include="images\bnr-3.jpg" />
@@ -109,7 +110,9 @@
     <Content Include="js\responsiveslides.min.js" />
     <Content Include="Listagem.aspx" />
     <Content Include="Obrigado.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adocao.aspx.cs">
