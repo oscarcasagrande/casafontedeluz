@@ -11,7 +11,7 @@ namespace CasaFonteDeLuz
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int idAfilhado = 0;
+            string idAfilhado = string.Empty;
             string emailPadrinho = string.Empty;
             string nomePadrinho = string.Empty;
             string mensagemPadrinho = string.Empty;
@@ -36,22 +36,12 @@ namespace CasaFonteDeLuz
             MensagemPadrinhoTextbox.Attributes.Add("onblur", "if (this.value == '') {this.value = 'Mensagem';}");
 
 
-            //< textarea value = "Message:" onfocus = "this.value = '';" onblur = "if (this.value == '') {this.value = 'Message';}" > Message..</ textarea >
-
-            //< asp:TextBox ID = "EmailPadrinhoTextbox" runat = "server" ></ asp:TextBox >
-            //< asp:TextBox ID = "NomePadrinhoTextbox" runat = "server" ></ asp:TextBox >
-            //< asp:TextBox ID = "TelefonePadrinhoTextbox" runat = "server" ></ asp:TextBox >
-            //< input type = "text" value = "First Name" onfocus = "this.value = '';" onblur = "if (this.value == '') {this.value = 'First Name';}" />
-            //< input type = "text" value = "Email" onfocus = "this.value = '';" onblur = "if (this.value == '') {this.value = 'Email';}" />
-            //< input type = "text" value = "Phone" onfocus = "this.value = '';" onblur = "if (this.value == '') {this.value = 'Phone';}" />
-
-
 
             if (Page.IsPostBack == true)
             {
                 if (Request.QueryString["IdAfilhado"] != null)
                 {
-                    idAfilhado = Convert.ToInt32(Request.QueryString["IdAfilhado"].ToString());
+                    idAfilhado = Request.QueryString["IdAfilhado"].ToString();
                 }
 
                 if (Request.Form["ctl00$ContentPlaceHolder1$EmailPadrinhoTextbox"] != null)

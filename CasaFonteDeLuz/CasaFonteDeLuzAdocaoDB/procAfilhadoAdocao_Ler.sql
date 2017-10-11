@@ -5,7 +5,7 @@ AS
 	,	case
 			when Adocao.IdAfilhado	is null then 0
 			else 1
-		end as Apdrinhado
+		end as Apadrinhado
 	FROM
 		dbo.Afilhado with(nolock)
 	left join

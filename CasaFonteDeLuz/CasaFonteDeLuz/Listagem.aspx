@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Listagem.aspx.cs" Inherits="CasaFonteDeLuz.Listagem" %>
 
+<%@ Register TagPrefix="uc" TagName="ucAfilhadoMini" Src="~/webusercontrol/AfilhadoMiniWebUserControl.ascx" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -17,6 +20,24 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+    <div class="products">
+        <div class="container">
+            <div class="products-top">
+                <h3>Nossas crian&ccedil;as TESTE</h3>
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore </p>
+            </div>
+
+            <asp:Repeater runat="server" ID="RepeaterCriancas">
+                <ItemTemplate>
+                    <uc:ucAfilhadoMini runat="server" ID="ucAfilhadoMiniUserControl" IdAfilhado='<%# DataBinder.Eval(Container, "DataItem.IdAfilhado") %>' Indice="<%# (Convert.ToInt32( Container.ItemIndex) +1).ToString() %>" />
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+    </div>
+
+
+    <hr />
     <!--gallery-Ends-Here-->
     <div class="products">
         <div class="container">
@@ -40,6 +61,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="view view-tenth">
                         <a href="Adocao.aspx">
@@ -72,9 +94,11 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="clearfix"></div>
             </div>
+
+
+
             <div class="products-bottom">
                 <div class="col-md-4">
                     <div class="view view-tenth">
@@ -176,5 +200,4 @@
         </div>
     </div>
     <!--gallery-Ends-Here-->
-
 </asp:Content>
