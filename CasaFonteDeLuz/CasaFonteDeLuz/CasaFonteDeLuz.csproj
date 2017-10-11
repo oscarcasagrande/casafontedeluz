@@ -262,6 +262,7 @@
     <Content Include="js\responsiveslides.min.js" />
     <Content Include="Listagem.aspx" />
     <Content Include="Obrigado.aspx" />
+    <Content Include="templateEmail\template.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

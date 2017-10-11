@@ -13,21 +13,27 @@ namespace CasaFonteDeLuz
         {
             public string IdAfilhado { get; set; }
             public bool Apadrinhado { get; set; }
+            public int Indice { get; set; }
+            public bool FazQuebra { get; set; }
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
             var dt = Utils.DatabaseHelper.ExecuteDataTable(new List<KeyValuePair<string, object>>(), "procAfilhadoAdocao_Ler");
             List<Afilhado> afilhados = new List<Afilhado>();
+            int i = 1;
 
-            int i = 0;
             foreach (System.Data.DataRow r in dt.Rows)
             {
+                i++;
+
                 afilhados.Add(
                     new Afilhado()
                     {
                         IdAfilhado = r[0].ToString().Replace(" ", string.Empty),
-                        Apadrinhado = Convert.ToBoolean(r[1])
+                        Apadrinhado = Convert.ToBoolean(r[1]),
+                        Indice = i,
+                        FazQuebra = i % 3 == 0 && i != 3
                     });
             }
 

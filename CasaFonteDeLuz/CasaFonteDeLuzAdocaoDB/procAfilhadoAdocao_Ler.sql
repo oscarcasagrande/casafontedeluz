@@ -11,3 +11,5 @@ AS
 	left join
 		dbo.Adocao with(nolock)
 			on	Afilhado.IdAfilhado	=	Adocao.IdAfilhado
+	ORDER BY
+		2 ASC
