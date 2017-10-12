@@ -96,7 +96,8 @@ namespace CasaFonteDeLuz
 
                     if (resultado == true)
                     {
-                        Response.Redirect("Obrigado.aspx");
+                        Response.Redirect(
+                            string.Format("Obrigado.aspx?IdAfilhado={0}", idAfilhado));
                     }
                     else
                     {

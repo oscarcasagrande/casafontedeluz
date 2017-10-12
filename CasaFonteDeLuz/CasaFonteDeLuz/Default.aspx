@@ -2,24 +2,25 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderMenu" runat="server">
     <div class="navigation">
         <ul class="navig">
             <li class="active"><a href="Default.aspx">Home</a></li>
-            <li><a href="#">Quem somos</a></li>
-            <li><a href="#">O que fazemos</a></li>
+            <li><a href="QuemSomos.aspx">Quem somos</a></li>
+            <li><a href="OQueFazemos.aspx">O que fazemos</a></li>
             <li><a href="Listagem.aspx">Adote</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="Contato.aspx">Contato</a></li>
         </ul>
     </div>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!--logo-Ends-Here-->
     <div class="logo">
         <div class="container">
             <div class="logo-main">
-                Casa Fonte de Luz
-                <%--<img src="images/logo.png" arc="">--%>
+                <img src="images/logo.png" arc="" />
             </div>
         </div>
     </div>
