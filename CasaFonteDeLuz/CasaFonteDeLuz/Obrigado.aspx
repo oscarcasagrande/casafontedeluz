@@ -14,7 +14,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="products">
+    <div class="products" style="text-align: center">
         <div class="container">
             <div class="products-top">
                 <h3>Obrigado ;)</h3>
@@ -23,11 +23,12 @@
                     <div class="view">
                         <div class="inner_content clearfix">
                             <div class="product_image">
-                                <img src="images/afilhados/<%=Request.QueryString["IdAfilhado"].ToString(); %>.JPG" class="img-responsive of-my" alt="" />
+                                <img src="" class="img-responsive of-my" alt="" runat="server" id="ImageAfilhado" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </asp:Content>

@@ -11,6 +11,10 @@ namespace CasaFonteDeLuz
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.QueryString["IdAfilhado"] != null)
+            {
+                ImageAfilhado.Src = string.Format("images/afilhados/{0}.jpg", Request.QueryString["IdAfilhado"].ToString());
+            }
 
         }
     }
